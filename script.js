@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const whatsappBtn = document.getElementById("whatsappBtn");
   const whatsappBtnNav = document.getElementById("whatsappBtnNav");
 
-  const phoneNumber = "923334575530"; // 0333 4575530
+  // Local: 0333 4575538  → WhatsApp international: +92 333 4575538
+  const phoneNumber = "923334575538"; // no plus sign here, wa.me adds it
   const message = encodeURIComponent(
     "Hello, I want to set up the AI Receptionist system for my clinic/business and become one of the first users."
   );
