@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollDemoBtn = document.getElementById("scrollDemoBtn");
 
   // Local: 0333 4575538 → WhatsApp international: +92 333 4575538
-  const phoneNumber = "923334575538"; // correct number, no plus sign
+  const phoneNumber = "923334575538"; // no plus sign for wa.me
   const message = encodeURIComponent(
     "Assalam o Alaikum. I want to try the Airex AI Receptionist 3‑day free trial for my clinic."
   );
