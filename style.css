@@ -16,9 +16,10 @@ body {
   color: #f8fafc;
   overflow-x: hidden;
   position: relative;
+  direction: ltr; /* explicit Left-to-Right layout */
 }
 
-/* Glowing neon gradient background behind everything */
+/* Animated neon gradient background behind everything */
 .gradient-bg {
   position: fixed;
   inset: 0;
@@ -28,17 +29,18 @@ body {
     radial-gradient(circle at 0% 100%, #22c55e55 0, transparent 50%),
     radial-gradient(circle at 100% 100%, #f9731655 0, transparent 50%),
     radial-gradient(circle at 50% 20%, #0ea5e955 0, transparent 55%),
-    linear-gradient(135deg, #020617, #020617);
-  filter: blur(0px);
+    linear-gradient(-45deg, #0b1120, #020617, #020617);
+  background-size: 220% 220%;
+  animation: neonFlow 22s ease-in-out infinite;
   z-index: -3;
 }
 
-/* Very subtle global glow */
+/* subtle extra glow */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at 50% 0%, #38bdf81a 0, transparent 60%);
+  background: radial-gradient(circle at 50% 10%, #38bdf81a 0, transparent 60%);
   mix-blend-mode: screen;
   pointer-events: none;
   z-index: -2;
@@ -61,7 +63,7 @@ body::before {
   padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid rgba(148, 163, 184, 0.35);
-  background: rgba(15, 23, 42, 0.82);
+  background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   display: flex;
@@ -129,8 +131,7 @@ body::before {
   font-weight: 700;
   text-decoration: none;
   font-size: 0.95rem;
-  box-shadow:
-    0 0 18px rgba(56, 189, 248, 0.7),
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.7),
     0 18px 35px rgba(37, 99, 235, 0.35);
   border: none;
   cursor: pointer;
@@ -139,28 +140,29 @@ body::before {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow:
-    0 0 26px rgba(56, 189, 248, 0.9),
+  box-shadow: 0 0 26px rgba(56, 189, 248, 0.9),
     0 24px 45px rgba(37, 99, 235, 0.5);
 }
 
-/* Hero */
+/* Hero: LTR, left-aligned, eye‑tracking friendly */
 .hero {
   max-width: 1100px;
-  margin: 48px auto 40px;
-  padding: 32px 20px 40px;
+  margin: 52px auto 40px;
+  padding: 40px 20px 44px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .hero-text {
-  max-width: 620px;
+  max-width: 640px;
+  text-align: left; /* left aligned for LTR reading */
 }
 
 .tag {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 4px 10px;
   border-radius: 999px;
   border: 1px solid rgba(56, 189, 248, 0.6);
@@ -173,23 +175,22 @@ body::before {
 }
 
 .hero h1 {
-  font-size: clamp(2.3rem, 4vw, 3rem);
+  font-size: clamp(2.4rem, 4.4vw, 3.1rem);
   line-height: 1.1;
   margin-bottom: 14px;
 }
 
 .neon-text {
   color: #e5e7eb;
-  text-shadow:
-    0 0 14px rgba(56, 189, 248, 0.8),
-    0 0 42px rgba(56, 189, 248, 0.5);
+  text-shadow: 0 0 14px rgba(56, 189, 248, 0.85),
+    0 0 42px rgba(56, 189, 248, 0.55);
 }
 
 .sub {
   color: #cbd5f5;
   font-size: 0.98rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.7;
+  margin-bottom: 22px;
   max-width: 520px;
 }
 
@@ -211,6 +212,7 @@ body::before {
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: #e5e7eb;
+  text-align: left; /* LTR reading */
 }
 
 .grid {
@@ -224,8 +226,7 @@ body::before {
   border-radius: 18px;
   padding: 16px 16px 18px;
   border: 1px solid rgba(148, 163, 184, 0.45);
-  box-shadow:
-    0 0 18px rgba(15, 23, 42, 0.9),
+  box-shadow: 0 0 18px rgba(15, 23, 42, 0.9),
     0 18px 30px rgba(15, 23, 42, 0.9);
 }
 
@@ -250,6 +251,11 @@ body::before {
 .how h2 {
   font-size: 1.4rem;
   margin-bottom: 14px;
+  text-align: left; /* LTR */
+}
+
+.how-content {
+  max-width: 640px;
 }
 
 .how-content p {
@@ -266,6 +272,7 @@ footer {
   padding: 16px 20px 0;
   font-size: 0.8rem;
   color: #9ca3af;
+  text-align: left;
 }
 
 /* =========================
@@ -287,7 +294,7 @@ footer {
   }
 
   .nav-links a {
-    display: none; /* hide text links on small screens, keep CTA */
+    display: none; /* hide text links on small screens, keep CTA via JS if needed */
   }
 
   .btn-outline {
@@ -300,7 +307,6 @@ footer {
     margin-top: 32px;
     margin-bottom: 28px;
     padding-inline: 14px;
-    text-align: left;
   }
 
   .hero-text {
@@ -308,11 +314,11 @@ footer {
   }
 
   .hero h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   .sub {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
   }
 
   .cta-note {
@@ -320,7 +326,7 @@ footer {
   }
 
   .grid {
-    grid-template-columns: 1fr; /* stack feature cards */
+    grid-template-columns: 1fr; /* stack feature cards on mobile */
   }
 
   .card {
@@ -330,6 +336,19 @@ footer {
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Animated gradient movement */
+@keyframes neonFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
