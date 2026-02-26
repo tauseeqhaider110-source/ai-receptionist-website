@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stop Losing Patients After 6PM | Airex AI Receptionist</title>
-
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-</head>
-
-<body>
-  <!-- Moving AI Neon Background -->
-  <div class="gradient-bg"></div>
-  <!-- AI lines animation layer -->
-  <div class="ai-lines-overlay"></div>
-
-  <!-- Main Page Wrapper (glass layer) -->
-  <div class="page-wrapper">
-    <!-- Navbar -->
-    <header class="navbar">
-      <div class="logo">Airex</div>
-      <nav class="nav-links">
-        <a href="#problem">Why Clinics Lose Patients</a>
-        <a href="#how">How It Works</a>
-        <a href="#trial" class="nav-link-highlight">3-Day Trial</a>
-        <a href="#" id="whatsappBtnNav" class="btn-outline">Get Free Trial</a>
-      </nav>
-    </header>
-
     <!-- Hero Section -->
     <section class="hero" id="problem">
       <div class="hero-text">
@@ -52,7 +16,8 @@
         <div class="hero-highlight">
           <p>
             Airex AI Receptionist answers every call in Urdu or English, asks
-            a few smart questions, and sends you a WhatsApp summary for each patient.
+            a few smart questions, and sends you a real WhatsApp message for each patient —
+            with their name, number, and reason for visit.
           </p>
         </div>
 
@@ -61,7 +26,7 @@
             Get a Free 3-Day Trial
           </a>
           <button class="btn-ghost" id="scrollDemoBtn">
-            Watch 60-Second Demo (Coming Soon)
+            See how the call flow works
           </button>
         </div>
 
@@ -71,187 +36,84 @@
         </p>
       </div>
 
-      <!-- AI “brain” / node animation block -->
-      <div class="hero-ai-visual">
-        <div class="ai-orbit">
-          <div class="ai-node ai-node-1"></div>
-          <div class="ai-node ai-node-2"></div>
-          <div class="ai-node ai-node-3"></div>
-          <div class="ai-node ai-node-4"></div>
-        </div>
-        <p class="ai-visual-caption">
-          AI listens to every call ? understands ? sends WhatsApp lead.
-        </p>
-      </div>
-    </section>
+      <!-- Hero Product UI: Call list + real WhatsApp preview -->
+      <div class="hero-product">
+        <!-- Main dashboard card -->
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div>
+              <p class="hero-card-title">Today’s Calls</p>
+              <p class="hero-card-subtitle">AI answered & sent to WhatsApp</p>
+            </div>
+            <span class="hero-card-badge">Live</span>
+          </div>
 
-    <!-- Local Proof / Benefits -->
-    <section class="local-proof" id="trial">
-      <h2>Made for Clinics in Lahore</h2>
+          <div class="hero-call-list">
+            <div class="hero-call-row">
+              <div class="hero-call-main">
+                <p class="hero-call-name">Ayesha (Mother)</p>
+                <p class="hero-call-meta">Child tooth pain · 7:32 PM</p>
+              </div>
+              <div class="hero-call-status hero-call-status-new">
+                New lead
+              </div>
+            </div>
 
-      <div class="local-grid">
-        <div class="local-card">
-          <h3>Works with Pakistani Numbers</h3>
-          <p>Use your existing mobile or landline. We connect AI behind it silently.</p>
-        </div>
-        <div class="local-card">
-          <h3>Urdu + English</h3>
-          <p>Natural, polite tone for local patients. No foreign accent or robotic feel.</p>
-        </div>
-        <div class="local-card">
-          <h3>WhatsApp Alerts</h3>
-          <p>Every caller’s name, reason, and preferred time in a WhatsApp message within seconds.</p>
-        </div>
-        <div class="local-card">
-          <h3>Performance Promise</h3>
-          <p>If you don’t see at least 10 useful leads in the first month, you don’t continue.</p>
-        </div>
-      </div>
-    </section>
+            <div class="hero-call-row">
+              <div class="hero-call-main">
+                <p class="hero-call-name">Mr. Khan</p>
+                <p class="hero-call-meta">Teeth cleaning · 6:48 PM</p>
+              </div>
+              <div class="hero-call-status">
+                Saved
+              </div>
+            </div>
 
-    <!-- Features Section (Pain ? Solution) -->
-    <section class="features" id="features">
-      <h2>What Happens When Your Front Desk Misses a Call?</h2>
+            <div class="hero-call-row">
+              <div class="hero-call-main">
+                <p class="hero-call-name">Sara</p>
+                <p class="hero-call-meta">Braces consult · 5:11 PM</p>
+              </div>
+              <div class="hero-call-status">
+                Follow-up
+              </div>
+            </div>
 
-      <div class="grid">
-        <div class="card card-pain">
-          <h3>You miss a new patient.</h3>
-          <p>
-            A mother calls for a child’s tooth pain. No answer. She calls the next clinic in Google
-            instead. You never even know she tried you.
-          </p>
-        </div>
-
-        <div class="card card-pain">
-          <h3>Staff are overloaded.</h3>
-          <p>
-            One receptionist handles walk-ins, reports, and calls. When they’re with a patient,
-            every ringing phone is a lost opportunity.
-          </p>
-        </div>
-
-        <div class="card card-pain">
-          <h3>Your marketing is wasted.</h3>
-          <p>
-            You pay for signboards, pamphlets, or online listings. But if you don’t answer calls,
-            all that money leaks out.
-          </p>
-        </div>
-      </div>
-
-      <h3 class="features-subheading">Airex AI Receptionist plugs that leak.</h3>
-
-      <div class="grid grid-solution">
-        <div class="card">
-          <h3>Smart Call Handling</h3>
-          <p>
-            Answers every call, greets the patient, understands their intent, and collects details
-            like name, service, and preferred time.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Instant WhatsApp Lead</h3>
-          <p>
-            You receive a WhatsApp message with all call details so you can reply when free and
-            confirm the appointment.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>24/7, No Sick Leave</h3>
-          <p>
-            Works after 6PM, during lunch, on Sundays, and even when your phone is busy.
-            No extra staff cost.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how" id="how">
-      <h2>How It Works (Simple)</h2>
-      <div class="how-steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <div>
-            <h3>We connect your clinic number.</h3>
-            <p>
-              You keep using your existing number. We route unanswered or after-hours calls to the AI.
-            </p>
+            <div class="hero-call-row hero-call-row-faded">
+              <div class="hero-call-main">
+                <p class="hero-call-name">Unknown number</p>
+                <p class="hero-call-meta">Missed before · Now answered by AI</p>
+              </div>
+              <div class="hero-call-status">
+                Recovered
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="step">
-          <div class="step-number">2</div>
-          <div>
-            <h3>AI answers every call.</h3>
-            <p>
-              It politely talks in Urdu/English, asks the right questions, and guides the patient.
-            </p>
+        <!-- Floating WhatsApp preview card -->
+        <div class="hero-whatsapp-card">
+          <div class="hero-whatsapp-header">
+            <div class="hero-whatsapp-avatar">AI</div>
+            <div>
+              <p class="hero-whatsapp-name">Airex AI Receptionist</p>
+              <p class="hero-whatsapp-status">typing…</p>
+            </div>
           </div>
-        </div>
 
-        <div class="step">
-          <div class="step-number">3</div>
-          <div>
-            <h3>You get a WhatsApp summary.</h3>
-            <p>
-              Name, reason, and preferred time appear in your WhatsApp. You or your staff respond
-              whenever free.
-            </p>
+          <div class="hero-whatsapp-bubble">
+            <p class="hero-whatsapp-label">New patient lead</p>
+            <p><strong>Name:</strong> Ayesha (Mother)</p>
+            <p><strong>Service:</strong> Child tooth pain checkup</p>
+            <p><strong>Preferred Time:</strong> Tomorrow · 6:30–7:00 PM</p>
+            <p><strong>Phone:</strong> 03xx-xxxxxxx</p>
+          </div>
+
+          <div class="hero-whatsapp-footer">
+            <span class="hero-whatsapp-footer-pill">
+              Sent to your clinic WhatsApp
+            </span>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Simple Offer Section -->
-    <section class="offer">
-      <h2>Simple Pricing for Early Clinics in Lahore</h2>
-      <div class="offer-grid">
-        <div class="offer-card">
-          <h3>Option A – Easy Start</h3>
-          <ul>
-            <li>Free setup</li>
-            <li>? 6,000 per month</li>
-            <li>Cancel anytime</li>
-          </ul>
-        </div>
-
-        <div class="offer-card offer-card-highlight">
-          <h3>Option B – Serious Clinics</h3>
-          <ul>
-            <li>? 10,000 one-time setup</li>
-            <li>? 8,000 per month</li>
-            <li>First month free</li>
-          </ul>
-        </div>
-      </div>
-      <p class="offer-note">
-        If you don’t get at least 10 useful leads in the first month, we don’t deserve to keep you.
-      </p>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="final-cta">
-      <h2>Want to See It in Action?</h2>
-      <p>
-        I’m in Lahore, near Faisal Town. I can show you a live demo on your own number or send you
-        a sample call + WhatsApp flow.
-      </p>
-      <a href="#" id="whatsappBtnBottom" class="btn-primary final-cta-btn">
-        Book Your Free 3-Day Trial on WhatsApp
-      </a>
-      <p class="final-cta-note">
-        You’ll be messaging directly with the founder who built this system for clinics like yours.
-      </p>
-    </section>
-
-    <footer>
-      <p>© 2026 Airex — AI Receptionist for Clinics in Lahore</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
