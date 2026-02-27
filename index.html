@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AI Receptionist – Phone AI for Clinics in Lahore</title>
+  <title>AI Front Desk – Dental Clinics in Lahore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -114,14 +114,14 @@
     }
 
     .logo-mark {
-      width: 30px;
-      height: 30px;
+      width: 34px;
+      height: 34px;
       border-radius: 999px;
       background: radial-gradient(circle at 30% 30%, #bbf7d0, #16a34a);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 700;
       color: #020617;
       box-shadow: 0 0 18px rgba(34, 197, 94, 0.8);
@@ -145,7 +145,7 @@
     }
 
     .logo-text-title {
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 600;
       color: #f9fafb;
     }
@@ -154,7 +154,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      font-size: 13px;
+      font-size: 14px;
       color: var(--muted);
     }
 
@@ -171,10 +171,10 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 6px 14px;
+      padding: 7px 16px;
       border-radius: 999px;
       border: 1px solid var(--border-soft);
-      font-size: 12px;
+      font-size: 13px;
       color: var(--text);
       text-decoration: none;
       gap: 6px;
@@ -183,8 +183,8 @@
     }
 
     .nav-cta-dot {
-      width: 7px;
-      height: 7px;
+      width: 8px;
+      height: 8px;
       border-radius: 999px;
       background: #22c55e;
       box-shadow: 0 0 8px rgba(34, 197, 94, 0.9);
@@ -202,6 +202,7 @@
       }
       .nav-right {
         gap: 10px;
+        font-size: 13px;
       }
       .nav-whatsapp-label {
         display: inline;
@@ -222,17 +223,17 @@
     /* HERO SECTION – FULL SCREEN HEIGHT */
 
     .hero-wrapper {
-      min-height: calc(100vh - 70px); /* full-screen feel minus nav */
+      min-height: calc(100vh - 70px);
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .hero {
-      padding: 32px 0 24px;
+      padding: 40px 0 28px;
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
-      gap: 32px;
+      gap: 40px;
       align-items: center;
     }
 
@@ -242,7 +243,8 @@
       }
       .hero {
         grid-template-columns: minmax(0, 1fr);
-        padding-top: 28px;
+        padding-top: 32px;
+        gap: 28px;
       }
     }
 
@@ -250,29 +252,32 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 999px;
       background: rgba(15, 23, 42, 0.94);
       border: 1px solid rgba(148, 163, 184, 0.5);
-      font-size: 11px;
+      font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.14em;
       color: var(--muted);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .hero-badge-dot {
-      width: 8px;
-      height: 8px;
+      width: 9px;
+      height: 9px;
       border-radius: 999px;
       background: #22c55e;
       box-shadow: 0 0 10px rgba(34, 197, 94, 0.9);
     }
 
     h1 {
-      font-size: clamp(2.2rem, 3vw, 2.7rem);
-      margin: 0 0 10px;
+      font-size: clamp(2.6rem, 4vw, 3.1rem);
+      margin: 0 0 12px;
       color: #f9fafb;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
     }
 
     .hero-highlight {
@@ -280,18 +285,53 @@
     }
 
     .hero-sub {
-      margin: 8px 0 0;
-      max-width: 540px;
+      margin: 10px 0 10px;
+      max-width: 620px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .hero-benefits {
+      margin: 10px 0 8px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .hero-benefits li {
       font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .hero-benefits span.bullet-icon {
+      color: var(--accent);
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .hero-roi {
+      margin-top: 10px;
+      font-size: 13px;
       line-height: 1.6;
       color: var(--muted);
+      max-width: 620px;
+      opacity: 0.95;
+    }
+
+    .hero-roi strong {
+      color: #e5e7eb;
+      font-weight: 600;
     }
 
     .hero-cta-row {
       margin-top: 18px;
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       align-items: center;
     }
 
@@ -299,17 +339,18 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 12px 22px;
+      gap: 9px;
+      padding: 13px 26px;
       border-radius: 999px;
       background: linear-gradient(135deg, var(--accent), var(--accent-strong));
       color: #020617;
       text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      box-shadow: 0 16px 40px rgba(16, 185, 129, 0.5);
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: 0 18px 44px rgba(16, 185, 129, 0.55);
       position: relative;
       overflow: hidden;
+      white-space: nowrap;
     }
 
     .btn-primary::after {
@@ -339,7 +380,7 @@
 
     .btn-primary:hover {
       filter: brightness(1.05);
-      box-shadow: 0 18px 48px rgba(16, 185, 129, 0.6);
+      box-shadow: 0 20px 52px rgba(16, 185, 129, 0.65);
     }
 
     .btn-secondary-text {
@@ -347,16 +388,24 @@
       color: var(--muted);
     }
 
-    .btn-secondary-text strong {
-      color: var(--text);
+    .btn-secondary-text span {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    @media (max-width: 480px) {
+      .btn-primary {
+        white-space: normal;
+        text-align: center;
+      }
     }
 
     /* HERO MOCKUP (RIGHT SIDE) */
 
     .hero-mock {
       position: relative;
-      padding: 18px;
-      border-radius: 18px;
+      padding: 20px;
+      border-radius: 20px;
       background: radial-gradient(circle at top left, #0b1120, #020617);
       border: 1px solid var(--border-soft);
       box-shadow: var(--shadow-strong);
@@ -367,11 +416,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .hero-mock-title {
-      font-size: 13px;
+      font-size: 14px;
       color: var(--muted);
       text-transform: uppercase;
       letter-spacing: 0.16em;
@@ -381,11 +430,11 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 4px 10px;
+      padding: 5px 11px;
       border-radius: 999px;
       background: rgba(15, 23, 42, 0.96);
       border: 1px solid rgba(148, 163, 184, 0.45);
-      font-size: 11px;
+      font-size: 12px;
       color: var(--muted);
     }
 
@@ -396,84 +445,85 @@
     }
 
     .hero-panel {
-      background: linear-gradient(145deg, #020617, #020617);
-      border-radius: 12px;
-      padding: 10px 12px;
-      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 12px 14px;
+      border: 1px solid rgba(148, 163, 184, 0.45);
       position: relative;
       overflow: hidden;
+      color: #0f172a;
     }
 
     .hero-panel-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     .hero-panel-label {
       font-size: 11px;
-      color: var(--muted);
+      color: #64748b;
       text-transform: uppercase;
       letter-spacing: 0.12em;
     }
 
     .hero-panel-value {
       font-size: 13px;
-      color: var(--accent);
+      color: #0f172a;
       font-weight: 600;
     }
 
-    .hero-chart {
-      height: 90px;
-      border-radius: 8px;
-      background:
-        linear-gradient(to right, rgba(34, 197, 94, 0.18), transparent),
-        linear-gradient(to top, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0.4));
-      position: relative;
-      overflow: hidden;
+    .hero-chat-bubble {
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 7px 9px;
+      font-size: 12px;
+      color: #0f172a;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 6px;
     }
 
-    .hero-chart-line {
-      position: absolute;
-      left: -30%;
-      right: 0;
-      top: 60%;
-      height: 2px;
-      background: linear-gradient(90deg, #22c55e, #4ade80, #22c55e);
-      box-shadow: 0 0 12px rgba(34, 197, 94, 0.9);
-      transform: skewY(-6deg);
-      animation: chartSlide 8s linear infinite;
+    .hero-chat-bubble.me {
+      background: #ecfdf5;
+      border-color: #bbf7d0;
     }
 
-    @keyframes chartSlide {
-      0% { transform: translateX(0) skewY(-6deg); }
-      100% { transform: translateX(60%) skewY(-6deg); }
-    }
-
-    .hero-tag-bubble {
-      position: absolute;
-      right: 10px;
-      top: 12px;
-      padding: 4px 8px;
-      border-radius: 999px;
+    .hero-chat-meta {
       font-size: 10px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.45);
-      color: var(--muted);
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+
+    .hero-mini-row {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 11px;
+      color: #0f172a;
+    }
+
+    .hero-mini-label {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .hero-mini-value {
+      color: #1e293b;
     }
 
     .hero-lead-card {
       position: absolute;
       right: 10px;
       bottom: 10px;
-      width: 190px;
+      width: 210px;
       background: rgba(15, 23, 42, 0.98);
-      border-radius: 12px;
-      padding: 8px 10px 9px;
+      border-radius: 13px;
+      padding: 9px 11px 10px;
       border: 1px solid rgba(148, 163, 184, 0.5);
       box-shadow: 0 14px 40px rgba(0, 0, 0, 0.9);
-      font-size: 11px;
+      font-size: 12px;
       color: var(--muted);
       animation: leadFloat 10s ease-in-out infinite alternate;
     }
@@ -488,7 +538,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 4px;
-      font-size: 11px;
+      font-size: 12px;
     }
 
     .hero-lead-title {
@@ -497,15 +547,15 @@
     }
 
     .hero-lead-dot {
-      width: 8px;
-      height: 8px;
+      width: 9px;
+      height: 9px;
       border-radius: 999px;
       background: #22c55e;
       box-shadow: 0 0 8px rgba(34, 197, 94, 0.9);
     }
 
     .hero-lead-row {
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
     .hero-lead-label {
@@ -534,7 +584,7 @@
     .section {
       background: radial-gradient(circle at top left, #020617, #020617);
       border-radius: 14px;
-      padding: 16px 18px 18px;
+      padding: 18px 20px 20px;
       border: 1px solid var(--border-soft);
       box-shadow: 0 20px 48px rgba(15, 23, 42, 0.9);
     }
@@ -544,36 +594,36 @@
       text-transform: uppercase;
       letter-spacing: 0.14em;
       color: var(--muted);
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     h2 {
-      font-size: 1.35rem;
-      margin: 0 0 6px;
+      font-size: 1.45rem;
+      margin: 0 0 8px;
       color: #f9fafb;
     }
 
     p {
       margin: 6px 0;
-      font-size: 13px;
-      line-height: 1.6;
+      font-size: 14px;
+      line-height: 1.7;
       color: var(--muted);
     }
 
     ul {
-      padding-left: 18px;
+      padding-left: 20px;
       margin: 8px 0;
     }
 
     li {
-      margin-bottom: 4px;
-      font-size: 13px;
+      margin-bottom: 5px;
+      font-size: 14px;
       color: var(--muted);
     }
 
     .pill {
       display: inline-block;
-      padding: 4px 10px;
+      padding: 5px 11px;
       border-radius: 999px;
       background: var(--accent-soft);
       color: var(--accent);
@@ -581,19 +631,19 @@
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.13em;
-      margin-bottom: 6px;
+      margin-bottom: 7px;
     }
 
     .pricing-main {
-      font-size: 13px;
-      margin-bottom: 6px;
+      font-size: 14px;
+      margin-bottom: 7px;
     }
 
     .footer-cta {
       margin-top: 26px;
       background: linear-gradient(135deg, rgba(34, 197, 94, 0.22), rgba(34, 197, 94, 0.06));
       border-radius: 14px;
-      padding: 16px 18px 18px;
+      padding: 18px 20px 20px;
       border: 1px solid rgba(34, 197, 94, 0.35);
       box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
     }
@@ -604,7 +654,7 @@
 
     .footer-note {
       margin-top: 16px;
-      font-size: 11px;
+      font-size: 12px;
       color: var(--muted);
       text-align: center;
       opacity: 0.85;
@@ -623,8 +673,8 @@
       <div class="logo">
         <div class="logo-mark">R</div>
         <div class="logo-text-main">
-          <div class="logo-text-small">AI RECEPTIONIST</div>
-          <div class="logo-text-title">Phone AI for Clinics</div>
+          <div class="logo-text-small">AI FRONT DESK</div>
+          <div class="logo-text-title">For Dental Clinics in Lahore</div>
         </div>
       </div>
       <div class="nav-right">
@@ -652,17 +702,37 @@
           <div>
             <div class="hero-badge">
               <span class="hero-badge-dot"></span>
-              <span>Built for clinics in Lahore</span>
+              <span>Built for dental clinics in Lahore</span>
             </div>
             <h1>
-              AI phone receptionist that
-              <span class="hero-highlight">never misses a patient call</span>
+              Never miss another patient inquiry.
+              <span class="hero-highlight">AI front desk for dental clinics in Lahore.</span>
             </h1>
             <p class="hero-sub">
-              AI Receptionist answers your clinic calls 24/7, asks patients a few simple questions,
-              and sends their details directly to your WhatsApp so you can focus on treatment,
-              not ringing phones.
+              AI front desk that handles WhatsApp bookings, confirms appointments, sends reminders,
+              and reduces no-shows automatically – without hiring extra staff.
             </p>
+
+            <ul class="hero-benefits">
+              <li>
+                <span class="bullet-icon">?</span>
+                <span>Respond to WhatsApp messages instantly, even after clinic hours.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">?</span>
+                <span>Reduce missed appointments with automatic confirmations and reminders.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">?</span>
+                <span>Capture every call and inquiry so no potential patient is lost.</span>
+              </li>
+            </ul>
+
+            <div class="hero-roi">
+              <strong>If your clinic misses just 2 patient bookings per week at Rs. 8,000 per treatment, that is Rs. 64,000 lost every month.</strong><br />
+              Our system makes sure those opportunities are captured automatically.
+            </div>
+
             <div class="hero-cta-row">
               <a
                 class="btn-primary"
@@ -670,17 +740,17 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book a 10-Minute Demo on WhatsApp ?
+                Book a free 10-minute demo
               </a>
               <div class="btn-secondary-text">
-                Or call directly: <strong>0305 8321199</strong>
+                <span>See how it works for your clinic before deciding.</span>
               </div>
             </div>
           </div>
 
           <aside class="hero-mock">
             <div class="hero-mock-header">
-              <div class="hero-mock-title">Live clinic call flow</div>
+              <div class="hero-mock-title">WhatsApp auto-reply & bookings</div>
               <div class="hero-mock-pill">
                 <span>Urdu &amp; English</span>
               </div>
@@ -688,117 +758,122 @@
             <div class="hero-mock-body">
               <div class="hero-panel">
                 <div class="hero-panel-header">
-                  <div class="hero-panel-label">Incoming call</div>
-                  <div class="hero-panel-value">Lahore Smile Dental Clinic</div>
+                  <div class="hero-panel-label">New WhatsApp inquiry</div>
+                  <div class="hero-panel-value">Lahore Dental Studio</div>
                 </div>
-                <div class="hero-chart">
-                  <div class="hero-chart-line"></div>
-                  <div class="hero-tag-bubble">“Assalam o Alaikum…”</div>
+
+                <div class="hero-chat-bubble">
+                  Patient: Hi, I want to book an appointment for teeth cleaning tomorrow.
+                  <div class="hero-chat-meta">Today · 4:12 PM</div>
+                </div>
+                <div class="hero-chat-bubble me">
+                  AI Front Desk: Thank you for contacting Lahore Dental Studio. What time suits you tomorrow and what is your full name?
+                  <div class="hero-chat-meta">Auto-reply · 2 seconds</div>
+                </div>
+
+                <div class="hero-mini-row">
+                  <div><span class="hero-mini-label">Patient name:</span> <span class="hero-mini-value">Ali Raza</span></div>
+                  <div><span class="hero-mini-label">Treatment:</span> <span class="hero-mini-value">Teeth cleaning</span></div>
+                  <div><span class="hero-mini-label">Preferred time:</span> <span class="hero-mini-value">Tomorrow · 6:30 PM</span></div>
                 </div>
               </div>
             </div>
+
             <div class="hero-lead-card">
               <div class="hero-lead-header">
-                <div class="hero-lead-title">New patient lead</div>
+                <div class="hero-lead-title">New booking captured</div>
                 <div class="hero-lead-dot"></div>
               </div>
               <div class="hero-lead-row">
-                <span class="hero-lead-label">Name:&nbsp;</span>
-                <span class="hero-lead-value">Ayesha Khan</span>
+                <span class="hero-lead-label">Name: </span>
+                <span class="hero-lead-value">Ali Raza</span>
               </div>
               <div class="hero-lead-row">
-                <span class="hero-lead-label">Service:&nbsp;</span>
+                <span class="hero-lead-label">Treatment: </span>
                 <span class="hero-lead-value">Teeth cleaning</span>
               </div>
               <div class="hero-lead-row">
-                <span class="hero-lead-label">Time:&nbsp;</span>
-                <span class="hero-lead-value">Tomorrow, 4:00 PM</span>
+                <span class="hero-lead-label">Time: </span>
+                <span class="hero-lead-value">Tomorrow, 6:30 PM</span>
               </div>
               <div class="hero-lead-row">
-                <span class="hero-lead-label">Phone:&nbsp;</span>
-                <span class="hero-lead-value">+92••••••••••</span>
+                <span class="hero-lead-label">Channel: </span>
+                <span class="hero-lead-value">WhatsApp</span>
               </div>
             </div>
           </aside>
         </section>
       </div>
 
-      <!-- SECTIONS GRID 1 -->
+      <!-- BELOW-HERO SECTIONS (you can keep or tweak) -->
       <section class="sections-grid">
         <section class="section">
           <div class="section-tag">How it works</div>
-          <h2>From phone call to WhatsApp lead in seconds</h2>
+          <h2>From missed messages to confirmed bookings</h2>
           <p>
-            Your clinic number stays the same. When patients call, AI Receptionist guides them
-            through a short, friendly conversation and collects everything you need to follow up.
+            Your existing WhatsApp number stays the same. When patients message, AI Front Desk replies,
+            asks a few simple questions, and sends you ready-to-confirm bookings.
           </p>
           <ul>
-            <li>Patient calls your clinic number.</li>
-            <li>
-              AI Receptionist greets them with your clinic name and asks for name, service,
-              preferred time, and phone number.
-            </li>
-            <li>
-              You instantly receive all details on WhatsApp so you can call back and confirm
-              the appointment.
-            </li>
+            <li>Patient sends a WhatsApp message or inquiry.</li>
+            <li>AI Front Desk replies instantly with your tone and clinic branding.</li>
+            <li>You see name, treatment, time, and contact details in one clear thread.</li>
           </ul>
         </section>
 
         <section class="section">
-          <span class="pill">Benefits</span>
-          <h2>Built for busy clinics</h2>
+          <span class="pill">Why clinics use this</span>
+          <h2>It quietly closes the gaps in your day</h2>
           <ul>
-            <li>No more missed calls when staff is busy or after hours.</li>
-            <li>Patients always get a polite, professional greeting.</li>
-            <li>Clean, structured lead details in a single WhatsApp message.</li>
-            <li>Simple, low-cost setup with no extra staff required.</li>
+            <li>Helps when staff are busy, clinic is closed, or phone lines are full.</li>
+            <li>Gives patients fast, polite replies instead of “message seen, no response.”</li>
+            <li>Turns scattered chats and calls into clear, trackable booking requests.</li>
+            <li>No new app for your team – it all stays inside WhatsApp.</li>
           </ul>
         </section>
       </section>
 
-      <!-- SECTIONS GRID 2 -->
       <section class="sections-grid" style="margin-top: 26px;">
         <section class="section">
-          <div class="section-tag">Who it's for</div>
-          <h2>Perfect for appointment-based clinics</h2>
+          <div class="section-tag">Who it is for</div>
+          <h2>Built for dental clinics that live on appointments</h2>
           <p>
-            AI Receptionist works best for clinics where missed calls mean missed appointments
-            and lost revenue.
+            Ideal for clinics where each missed message or call can mean a lost patient and lost revenue.
           </p>
           <ul>
-            <li>Dental clinics</li>
-            <li>Skin and cosmetic clinics</li>
-            <li>General physicians and family clinics</li>
-            <li>Diagnostic labs and small healthcare centers</li>
+            <li>Dental and orthodontic clinics</li>
+            <li>Implant and cosmetic dentistry practices</li>
+            <li>Family dental clinics and small dental chains</li>
           </ul>
         </section>
 
         <section class="section">
           <span class="pill">Pricing</span>
-          <h2>Simple, transparent pricing</h2>
+          <h2>Start with a free 3-day trial</h2>
           <p class="pricing-main">
-            For the first clinics in Lahore, I’m offering a straightforward plan:
+            I will set it up for your clinic, connect it to your WhatsApp, and let you test it with real patients.
+            If you do not like it, we switch it off. No charges.
           </p>
           <ul>
-            <li><strong>Setup:</strong> PKR 10,000 (one-time)</li>
-            <li><strong>Monthly:</strong> PKR 4,000 (hosting, Twilio, and support)</li>
+            <li><strong>Setup:</strong> Free for trial dental clinics in Lahore</li>
+            <li><strong>Monthly:</strong> PKR 6,000 after trial if you decide to keep it</li>
           </ul>
-          <p>No long-term contract. If you’re not happy, you can cancel any time.</p>
+          <p>
+            If it does not bring at least 10 extra leads in the first month, you can cancel and I will refund
+            that month&apos;s fee. Simple.
+          </p>
         </section>
       </section>
 
-      <!-- FINAL CTA -->
       <section class="footer-cta">
-        <div class="section-tag">Get a live demo</div>
-        <h2>See AI Receptionist handling your clinic calls</h2>
+        <div class="section-tag">Next step</div>
+        <h2>Want to see it handle your own patient inquiries?</h2>
         <p>
-          I’ll show you a quick live demo using your own greeting and questions, and you can
-          experience exactly what your patients will hear when they call.
+          I will show you a 60-second demo where AI Front Desk replies to real messages for your
+          dental clinic and turns them into bookings.
         </p>
         <p>
-          Click below to message me on WhatsApp or call me directly at
-          <strong>0305 8321199</strong>.
+          Message me on WhatsApp or call me now, and we will set up your free 3-day trial.
         </p>
         <a
           class="btn-primary"
@@ -806,12 +881,12 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          Talk to Tauseeq on WhatsApp
+          Get your free 3-day trial
         </a>
       </section>
 
       <div class="footer-note">
-        AI Receptionist · Built by Tauseeq Haider · Phone: 0305 8321199
+        AI Front Desk · Built by Tauseeq Haider · Phone: 0305 8321199
       </div>
     </main>
   </div>
